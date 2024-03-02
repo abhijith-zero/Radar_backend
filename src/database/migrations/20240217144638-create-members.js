@@ -25,8 +25,21 @@ module.exports = {
         allowNull: true,
       },
       member_user_name: {
-        type: Sequelize.FLOAT, // Assuming this should be STRING
+        type: Sequelize.STRING,
         allowNull: false,
+      },
+      email:{
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      password:{
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      refreshToken:{
+        type: Sequelize.STRING,
+        allowNull: false,
+        defaultValue: '',
       },
       createdAt: {
         allowNull: false,
